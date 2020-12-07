@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>오버워치계산기</title>
+<script>
+            function test(){
+	    const n1 = Number(document.getElementById('victory').value);
+	    const n2 = Number(document.getElementById('point').value);
+
+a=2*n1-(300-3*n1)/2
+b=a/10
+c=n2/b
+d=c*30
+e=d/60
+                alert('판수: '+c+'\n'+'시간: '+e);
+            }
+        </script>
+</head>
+<body>
+<h1> <font color="pink">오버워치에서 원하는 점수를 올릴 때 필요한 판과 시간을 계산하는 프로그램</font> </h1>
+<h2> <font color="red">올리고 싶은 점수를 얼마나 해야되는지 알아보세요!</font> </h2>
+<img src="https://static.playoverwatch.com/img/logos/overwatch-share-4dab210e88.jpg"/><br><br>
+<h2> <font color="pink">자신의 승률을 적어주세요!</font> </h2>
+<input id='victory' type=text><br><br>
+<h2> <font color="pink">올리고 싶은 점수를 적어주세요!</font> </h2>
+<input id='point' type=text><br><br>
+<h2> <font color="pink">계산하기!</font> </h2>
+<input type="button" onclick="test()" value="계산"/>
+</body>
+</html>
